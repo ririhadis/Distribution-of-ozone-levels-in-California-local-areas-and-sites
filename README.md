@@ -107,3 +107,7 @@ import matplotlib.pyplot as plt
 import geopandas as gpd
 from shapely.geometry import Point
 import plotly.express as px
+
+.
+├── notebook.ipynb   # Full data cleaning & visualization workflow
+├── README.md        # Project documentation
