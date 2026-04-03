@@ -116,3 +116,16 @@ import plotly.express as px
 
 ├── ozone.csv   # Dataset
 ├── README.md        # Project documentation
+
+---
+
+## ⚙️ Installation & Setup
+
+1. Clone this repository:
+git clone https://github.com/yourusername/california-ozone-analysis.git
+cd california-ozone-analysis
+
+2. Create and activate a Python virtual environment:
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
