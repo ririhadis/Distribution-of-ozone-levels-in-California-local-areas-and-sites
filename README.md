@@ -85,6 +85,8 @@ fig = px.scatter_mapbox(
     mapbox_style="carto-positron"
 )
 
+---
+
 ## 🔥 Density Heatmap
 
 sns.kdeplot(
