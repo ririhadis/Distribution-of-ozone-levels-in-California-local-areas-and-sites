@@ -84,5 +84,3 @@ fig = px.scatter_mapbox(
     zoom=5,
     mapbox_style="carto-positron"
 )
-
----
