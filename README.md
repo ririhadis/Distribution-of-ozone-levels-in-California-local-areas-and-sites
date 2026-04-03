@@ -162,3 +162,15 @@ jupyter notebook notebook.ipynb
 - Pandas Documentation
 - GeoPandas Documentation
 - Plotly Express Documentation
+
+---
+
+## 📝 License
+
+This project is licensed under the MIT License – see LICENSE for details.
+
+---
+
+## Author
+
+Srie Wahyudhanis Hadis
