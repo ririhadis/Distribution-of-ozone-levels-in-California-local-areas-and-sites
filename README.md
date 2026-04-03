@@ -135,3 +135,7 @@ pip install -r requirements.txt
 
 4. Launch Jupyter Notebook:
 jupyter notebook notebook.ipynb
+
+---
+
+## 📝 Usage
