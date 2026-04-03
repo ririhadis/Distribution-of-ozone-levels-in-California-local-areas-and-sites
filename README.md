@@ -110,7 +110,9 @@ import plotly.express as px
 ```
 ---
 
-## Tes
+## 📁 Project Structure
 
 ├── notebook.ipynb   # Full data cleaning & visualization workflow
+
+├── ozone.csv   # Dataset
 ├── README.md        # Project documentation
