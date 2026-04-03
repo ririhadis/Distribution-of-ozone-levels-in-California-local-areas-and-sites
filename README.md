@@ -87,7 +87,8 @@ fig = px.scatter_mapbox(
 
 ---
 
-## 🔥 Density Heatmap
+
+### 🔥 Density Heatmap
 
 sns.kdeplot(
     x=gdf.geometry.x,
