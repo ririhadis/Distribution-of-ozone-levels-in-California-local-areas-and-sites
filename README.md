@@ -129,3 +129,9 @@ cd california-ozone-analysis
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate     # Windows
+
+3. Install dependencies:
+pip install -r requirements.txt
+
+4. Launch Jupyter Notebook:
+jupyter notebook notebook.ipynb
