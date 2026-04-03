@@ -139,3 +139,8 @@ jupyter notebook notebook.ipynb
 ---
 
 ## 📝 Usage
+
+- Open notebook.ipynb in Jupyter
+- Follow the workflow: Data Preprocessing → EDA → Monthly Analysis → Geospatial Visualization
+- Modify plotting or filtering parameters to explore specific sites, counties, or time periods
+- Use the interactive plotly charts for deeper insights
