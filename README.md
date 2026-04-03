@@ -153,3 +153,12 @@ jupyter notebook notebook.ipynb
 - Build predictive models for ozone levels using machine learning
 - Deploy interactive web dashboard using Dash or Streamlit
 - Expand analysis to other pollutants (PM2.5, NO₂, CO)
+
+---
+
+## 📚 References
+- EPA Air Quality System (AQS) Data
+- AirNow Air Quality Data
+- Pandas Documentation
+- GeoPandas Documentation
+- Plotly Express Documentation
