@@ -1,86 +1,109 @@
-# 🌍 Distribution of Ozone Levels in California  
-### 📊 Spatial, Statistical & AI-Based Analysis of Air Quality Data
+# 🌐 California Ozone Level Analysis – Data & AI Project
 
-![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
-![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-orange)
-![GeoPandas](https://img.shields.io/badge/GeoPandas-Geospatial-green)
-![Plotly](https://img.shields.io/badge/Plotly-Interactive%20Visualization-purple)
-![Seaborn](https://img.shields.io/badge/Seaborn-Statistical%20Visualization-teal)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-yellow)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
-
----
-
-## 📌 Overview
-This project explores the distribution of ozone (O₃) levels across various local areas and monitoring sites in California using **data analysis, geospatial visualization, and machine learning techniques**.
-
-Ground-level ozone is a harmful air pollutant that affects both human health and the environment. This project aims to uncover spatial patterns, identify high-risk areas, and detect anomalies in ozone concentrations.
+[![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white)](https://www.python.org/) 
+[![Pandas](https://img.shields.io/badge/Pandas-Data%20Manipulation-brightgreen?logo=pandas&logoColor=white)](https://pandas.pydata.org/) 
+[![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-orange?logo=numpy&logoColor=white)](https://numpy.org/) 
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-red?logo=matplotlib&logoColor=white)](https://matplotlib.org/) 
+[![Seaborn](https://img.shields.io/badge/Seaborn-Visualization-blueviolet?logo=seaborn&logoColor=white)](https://seaborn.pydata.org/) 
+[![Plotly](https://img.shields.io/badge/Plotly-Interactive%20Charts-lightgrey?logo=plotly&logoColor=white)](https://plotly.com/python/) 
+[![GeoPandas](https://img.shields.io/badge/GeoPandas-Geospatial-teal?logo=geopandas&logoColor=white)](https://geopandas.org/) 
 
 ---
 
-## 🎯 Objectives
-- Analyze daily ozone concentration levels  
-- Identify spatial distribution patterns across locations  
-- Visualize ozone data using interactive maps  
-- Detect abnormal ozone levels using machine learning  
-- Provide insights for environmental risk analysis  
+## 🚀 Project Overview
+This project analyzes **ozone (O₃) levels across California** using real-world air quality datasets.  
+It demonstrates a **full data engineering and exploratory analysis workflow**, highlighting skills relevant for **AI & Data Engineering roles**, without predictive modeling.
+
+**Key focus areas for AI/Data Engineer portfolio:**
+- Data preprocessing & cleaning  
+- Feature engineering  
+- Exploratory data analysis (EDA)  
+- Interactive and geospatial visualizations  
 
 ---
 
-## 🖼️ Visualization Preview
-
-### 🌐 Spatial Distribution Map
-Geographical distribution of ozone levels using Plotly:
-
-![Ozone Map Preview](https://raw.githubusercontent.com/ririhadis/Distribution-of-ozone-levels-in-California-local-areas-and-sites/main/assets/map_preview.png)
-
----
-
-### 🔥 Spatial Heatmap
-Density visualization of ozone concentration:
-
-![Heatmap Preview](https://raw.githubusercontent.com/ririhadis/Distribution-of-ozone-levels-in-California-local-areas-and-sites/main/assets/heatmap_preview.png)
+## 🔑 Skills & Techniques Highlighted
+- **Data Engineering:** Cleaning, merging, and transforming multi-source datasets  
+- **Feature Engineering:** Handling date, location, and air quality variables  
+- **EDA & Visualization:**  
+  - Static plots with `matplotlib` & `seaborn`  
+  - Interactive charts with `plotly.express`  
+  - Geospatial mapping of monitoring sites using `geopandas` & `shapely`  
+- **Python Workflow:** Structured, reproducible notebook using Jupyter  
 
 ---
 
-### 📈 Monthly Trend
-Monthly variation of ozone levels:
+## 📊 Dataset Description
+The dataset contains **air quality measurements** from multiple monitoring sites in California:
 
-![Monthly Trend](https://raw.githubusercontent.com/ririhadis/Distribution-of-ozone-levels-in-California-local-areas-and-sites/main/assets/monthly_trend.png)
-
----
-
-## 📊 Dataset
-- ~50,000+ observations  
-- Geographic coordinates (latitude & longitude)  
-- Daily ozone concentration values  
-- Monitoring site information  
-
----
-
-## 🛠️ Tech Stack
-
-| Category          | Tools |
-|------------------|------|
-| Data Processing  | pandas, numpy |
-| Visualization    | matplotlib, seaborn, plotly |
-| Geospatial       | geopandas |
-| Machine Learning | scikit-learn |
-| Environment      | Jupyter Notebook |
+| Feature | Description |
+|---------|-------------|
+| Date | Observation date |
+| Source | Data source (EPA AQS or AirNow) |
+| Site ID / POC | Monitoring site and monitor IDs |
+| Daily Max 8-hour Ozone Concentration | Max ozone concentration (ppm) |
+| Units | Measurement units (ppm) |
+| Daily AQI Value | Air Quality Index (0–500) |
+| Local Site Name | Monitoring site name |
+| Daily Obs Count | Number of daily observations |
+| Percent Complete | Percentage of expected samples collected |
+| Method Code | Sampling method ID |
+| CBSA Code / CBSA Name | Core Base Statistical Area ID and name |
+| State FIPS / State | State code and name |
+| County FIPS / County | County code and name |
+| Site Latitude / Longitude | Geographic coordinates of the monitoring site |
 
 ---
 
-## 🔍 Analysis
+## 🔍 Analysis Workflow
 
-### 📍 Spatial Visualization (Plotly)
+### 1. Data Preprocessing
+- Merge and clean multiple data sources (EPA AQS & AirNow)  
+- Convert `Date` to datetime objects  
+- Handle missing or incomplete observations  
+- Encode categorical variables (State, County, CBSA)  
+- Engineer new features: day of week, month, season, location points  
+
+### 2. Exploratory Data Analysis (EDA)
+- Distribution analysis of ozone levels using **histograms & boxplots** (`matplotlib`, `seaborn`)  
+- Trend analysis of AQI values by **state, county, and site**  
+- Correlation analysis among air quality features  
+- Geospatial visualization of ozone levels by site using **`geopandas` & `shapely`**  
+- Interactive plots for deeper insights using **`plotly.express`**  
+
+### 3. Monthly Maximum Ozone Analysis
+- Identify the **Local Site with the highest ozone concentration for each month**  
+- Display results in a **table** in the notebook  
+- Visualize with **interactive bar charts** to show site rankings per month  
+- Optional: Map site locations on a **geospatial map** for high-risk areas  
+
+**Example insights:**
+- Which sites consistently record the highest ozone levels  
+- Seasonal patterns in ozone peaks across California  
+- Identification of **high-risk areas** for poor air quality  
+
+---
+
+## 📈 Key Insights
+- 🌡️ Ozone levels show **seasonal and temporal variation**  
+- 🌬️ Wind and location influence ozone concentration patterns  
+- ⚠️ Distribution is **right-skewed**, with occasional high ozone days  
+- Geospatial visualization helps identify **high-risk areas**  
+
+---
+
+## 🧰 Tech Stack & Libraries
+- Python 3.x  
+- **Data Manipulation:** `pandas`, `numpy`  
+- **Visualization:** `matplotlib`, `seaborn`, `plotly.express`  
+- **Geospatial Analysis:** `geopandas`, `shapely`  
+- **Workflow:** Jupyter Notebook  
+
 ```python
-fig = px.scatter_mapbox(
-    ozone,
-    lat="site_latitude",
-    lon="site_longitude",
-    color="daily_ozone_concentration",
-    size="daily_ozone_concentration",
-    size_max=15,
-    zoom=5,
-    mapbox_style="carto-positron"
-)
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+import geopandas as gpd
+from shapely.geometry import Point
+import plotly.express as px
