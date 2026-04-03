@@ -148,3 +148,8 @@ jupyter notebook notebook.ipynb
 ---
 
 ## 🔮 Future Work
+
+- Integrate meteorological data (temperature, wind, humidity) for more insights
+- Build predictive models for ozone levels using machine learning
+- Deploy interactive web dashboard using Dash or Streamlit
+- Expand analysis to other pollutants (PM2.5, NO₂, CO)
